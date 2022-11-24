@@ -36,3 +36,161 @@
     transform: rotate(360deg);
   }
 }
+
+/***** Header *****/
+.header{
+  background-color: #478ac9; 
+  border-top: 1px grey;
+  margin-bottom: 2em;
+}
+
+.navbar-brand {
+  padding: 3px 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.nav-link{
+  color: #478ac9 !important;
+  font-size: 18px;
+}
+
+/***** Accordion *****/
+
+.accordion-header {
+  border: 2.5px solid rgb(71, 138, 201);
+  border-radius: 5px;
+}
+
+.accordion-button {
+  color: #478ac9;
+}
+
+.d-flex {
+  color: #555c66;
+}
+
+/***** Home Page *****/
+
+.home {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  color: #478ac9;
+}
+
+.header {
+  margin-left: '0.5em';
+}
+
+.nav-link {
+  color: white;
+}
+
+/***** Screen Show *****/
+
+.screen-show-list {
+  width: 80%;
+  margin: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screen-show-rating {
+  font-weight: bold;
+}
+
+.screen-show-data {
+  display: flex; 
+  flex: 1;
+}
+
+.screen-show-image {
+  width: 12%;
+  margin-right: 0.5em;
+}
+
+.page-buttons-container{
+  display: flex;
+  width: 50%; 
+  margin: auto;
+}
+
+.page-buttons {
+  cursor: pointer;
+  color: #478ac9;
+  margin-left: 1em;
+}
+
+.page-numbers{
+  margin-left: 2em;
+  height: 2em;
+  padding: 0.2em 1em;
+  border-radius: 15px;
+  background-color: #fff;
+  font-weight: 700;
+  color: #478ac9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.page-dots{
+  margin-top: -0.6em;
+  font-size: 32px;
+  color: #478ac9;
+}
+
+/***** Parameter Form *****/
+
+.parameter-form {
+  margin: 1em;
+  display: block;
+}
+
+.parameter-button {
+  margin: 1em;
+  background-color: #478ac9;
+}
+
+/***** Add New Form *****/
+
+.add-new-form-container {
+  display: block;
+  color: #478ac9;
+}
+
+.add-new-container {
+  display: block;
+  margin-left: 40%;
+  color: #478ac9;
+  margin-top: -2%;
+}
+
+.add-new-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  width: 30%;
+}
+
+.add-new-title {
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+.add-new-form {
+  display: flex;
+  width: 100%; 
+  margin: 1em;
+}
+
+.form-label {
+  color: #478ac9;
+}
+
+.list-group {
+  --bs-list-group-border-color:white;
+}
