@@ -37,34 +37,112 @@
   }
 }
 
+/***** Antd *****/
+
+@media(max-width: 600px){
+  .ant-page-header-ghost{
+    display: block !important;
+  }
+}
+
+.ant-page-header-ghost {
+  background-color: inherit;
+  display: flex;
+}
+
+.ant-page-header-heading-title{
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.ant-form-item-label > label{
+  color: #1b4c7a;
+  font-weight: bold;
+}
+
+.ant-collapse-item ant-collapse-no-arrow{
+  border-radius: 10px;
+}
+
+.ant-collapse-content ant-collapse-content-active{
+  border-radius: 10px;
+}
+
+.ant-collapse-header{
+  background-color: #efeff7;
+}
+
+.ant-list-split .ant-list-item{
+  border: 0px;
+}
+
 /***** Header *****/
+
 .header{
-  background-color: #478ac9; 
+  background: linear-gradient(to right, black, #478ac9);
   border-top: 1px grey;
   margin-bottom: 2em;
+  color: white;
 }
 
-.navbar-brand {
-  padding: 3px 12px;
-  border-radius: 15px;
-  background-color: #fff;
-  font-weight: 700;
+@media(min-width: 601px){
+  .header-item {
+    padding: 3px 12px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-weight: 700;
+    margin-left: 2em
+  }
 }
-
-.nav-link{
-  color: #478ac9 !important;
-  font-size: 18px;
+@media(max-width: 600px){
+  .header-item{
+    padding: 2px 6px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-weight: 700;
+    margin-left: 0.5em
+  }
 }
 
 /***** Accordion *****/
 
-.accordion-header {
-  border: 2.5px solid rgb(71, 138, 201);
-  border-radius: 5px;
+.accordion-panel{
+  background-color: rgb(237 241 248);
+  border-radius: 10px;
+}
+
+@media(max-width: 600px){
+  .accordion-image{
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media(min-width: 601px){
+  .accordion-header {
+    display: flex;
+    font-size: 15px;
+  }
+}
+@media(max-width: 600px){
+  .accordion-header {
+    font-size: 15px;
+  }
+}
+
+.ant-row{
+  margin-bottom: 0.5em;
 }
 
 .accordion-button {
   color: #478ac9;
+}
+
+.accordion-title{
+  color: #1b4c7a;
+  margin-bottom: 0.5em;
+  font-size: 26px;
 }
 
 .d-flex {
@@ -97,21 +175,38 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 .screen-show-rating {
   font-weight: bold;
+  margin-top: 2em;
 }
 
-.screen-show-data {
-  display: flex; 
-  flex: 1;
+@media(min-width: 601px){
+  .screen-show-data {
+    display: flex; 
+    flex: 1;
+  }
 }
 
-.screen-show-image {
-  width: 12%;
-  margin-right: 0.5em;
+@media(min-width: 601px){
+  .screen-show-data-list{
+    margin-left: 1.5em;
+  }
 }
+
+@media(min-width: 601px){
+  .screen-show-data-list-middle{
+    width: 50%
+  }
+}
+@media(max-width: 60px){
+  .screen-show-data-list-middle{
+    width: 100%
+  }
+}
+
 
 .page-buttons-container{
   display: flex;
@@ -145,14 +240,47 @@
 
 /***** Parameter Form *****/
 
-.parameter-form {
-  margin: 1em;
-  display: block;
+@media(min-width: 601px){
+  .parameter-form {
+    margin-left: 20%;
+  }
+}
+
+.parameter-item{
+  margin-left: 1em;
+  width: 15em;
+  color:#1b4c7a;
+}
+
+.parameter-button-container{
+  margin-left: 25%;
+  margin-bottom: 1em;
 }
 
 .parameter-button {
   margin: 1em;
-  background-color: #478ac9;
+}
+
+@media(max-width: 600px){
+  .bottom-parameter-fields{
+    margin-left: 15%;
+  }
+}
+
+.primary-button {
+  margin: 1em;
+  color: #fff;
+  border-color: #40a9ff;
+  background: #40a9ff;
+  border-radius: 6px;
+}
+
+.danger-button {
+  margin: 1em;
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  background-color: white;
+  border-radius: 6px;
 }
 
 /***** Add New Form *****/
@@ -160,12 +288,13 @@
 .add-new-form-container {
   display: block;
   color: #478ac9;
+  margin: 1em 3em 0em 3em;
 }
 
 .add-new-container {
   display: block;
   margin-left: 40%;
-  color: #478ac9;
+  color: #1b4c7a;
   margin-top: -2%;
 }
 
@@ -177,14 +306,19 @@
 }
 
 .add-new-title {
-  margin-left: 1em;
   font-weight: bold;
+  font-size: 16px;
+  color: #1b4c7a
 }
 
 .add-new-form {
   display: flex;
   width: 100%; 
-  margin: 1em;
+  margin: 2em 1em 1em 1em;
+}
+
+.add-new-buttons{
+  margin-left: 2em;
 }
 
 .form-label {
@@ -193,4 +327,18 @@
 
 .list-group {
   --bs-list-group-border-color:white;
+}
+
+/***** React Modal *****/
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }
